@@ -30,7 +30,7 @@ class WHMCSOrderFetcher
         }
         return true;
     }
-    public function getOrderByOrderNumber($orderNumber)
+    public function fetchOrder($orderNumber)
     {
         if (!$this->isValidOrderNumber($orderNumber)) {
             return $this->jsonResponse("error", 'Invalid/Empty Order Number');
