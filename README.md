@@ -12,7 +12,7 @@ $orderNumber = $_GET['ordernum'] ?? null;
 
 // Check if the order number is provided and fetch the order
 if ($orderNumber) {
-    $orderFetcher->getOrderByOrderNumber($orderNumber);
+    $orderFetcher->fetchOrder($orderNumber);
 } else {
     exit('Error: Plesse Enter An Order Number!');
 }
